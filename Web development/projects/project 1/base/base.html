@@ -1,0 +1,77 @@
+<!-- MAIN.HTML:-  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        myProjects base.
+    </title>
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="base.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> DAS.</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="/project 1/logIn/logIn.html" target="_blank">log in</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="moon.png" id="moon">
+        <img src="stars.png" id="stars">
+        <h2 id="text">My projects.</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountain_front.png" id="mountainFront">
+        <img src="mountain_back.png" id="mountainBack">
+    </section>
+    <div class="sec" id="sec">
+        <h2>list of my projects.</h2>
+       
+        <p> This websites contents all the projects using HTML ,CSS ,JAVASCIPT.
+            <br>
+            <br>
+            MUSIC PLAYER :
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odit consequuntur ad facere facilis minima saepe voluptatem ut autem pariatur!
+            <br>
+            <br>
+            WORLD CLOCK :
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odit consequuntur ad facere facilis minima saepe voluptatem ut autem pariatur!
+
+            <br>
+            <br>
+            LOGIN :
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odit consequuntur ad facere facilis minima saepe voluptatem ut autem pariatur!
+
+        </p>
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountainBack = document.getElementById('mountainBack');
+let btn = document.getElementById('btn');
+let text = document.getElementById('text');
+let mountainFront = document.getElementById('mountainFront');
+let header = document.querySelector('header');
+
+window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 1.05 + 'px';
+    mountainBack.style.top = value * 0.5 + 'px';
+    mountainFront.style.top = value * 0 + 'px';
+    text.style.marginRight = value * 4 + 'px';
+    text.style.marginTop = value * 1.5 + 'px';
+    btn.style.marginTop = value * 1.5 + 'px';
+    header.style.top = value * 0.5 + 'px';
+})
+    </script>
+</body>
+
+</html>
